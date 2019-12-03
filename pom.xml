@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.harium.keel</groupId>
     <artifactId>boofcv</artifactId>
-    <version>0.32.0</version>
+    <version>0.34.0</version>
     <name>Keel Boof</name>
     <description>Keel BoofCV Integration</description>
     <url>http://github.com/harium/keel-boofcv</url>
@@ -24,12 +24,12 @@
         <dependency>
             <groupId>com.harium.keel</groupId>
             <artifactId>core</artifactId>
-            <version>1.5.0</version>
+            <version>1.6.0</version>
         </dependency>
         <dependency>
             <groupId>org.boofcv</groupId>
             <artifactId>boofcv-core</artifactId>
-            <version>0.32</version>
+            <version>0.34</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -67,9 +67,13 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.5.1</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>8</source>
+                    <target>8</target>
                     <optimize>true</optimize>
+                    <compilerArgument>-parameters</compilerArgument>
+                    <excludes>
+                        <exclude>**/examples/*</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
             <plugin>

@@ -1,9 +1,12 @@
+package com.harium.keel.boofcv.source;
+
 import boofcv.struct.image.GrayU8;
 import boofcv.struct.image.Planar;
 import com.harium.keel.core.helper.ColorHelper;
 import com.harium.keel.core.source.ImageSource;
+import com.harium.keel.core.source.ImageSourceImpl;
 
-public class BoofRGBImageSource implements ImageSource {
+public class BoofRGBImageSource extends ImageSourceImpl {
 
     public static final int CHANNEL_RED = 0;
     public static final int CHANNEL_GREEN = 1;

@@ -1,3 +1,5 @@
+package com.harium.keel.boofcv.source;
+
 import boofcv.struct.image.GrayU8;
 import boofcv.struct.image.Planar;
 import com.harium.keel.core.helper.ColorHelper;
